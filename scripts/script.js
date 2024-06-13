@@ -21,11 +21,7 @@ let generarDominio = function(){
             let randomNumberExtension = Math.floor(Math.random()*extensiones.length);
             dominio += extensiones[randomNumberExtension];
         }
-
-        
         }
+        document.getElementById("campovacio").value = dominio;
         console.log(dominio);
 }
-
-
-generarDominio();
