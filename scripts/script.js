@@ -22,6 +22,24 @@ let generarDominio = function(){
             dominio += extensiones[randomNumberExtension];
         }
         }
-        document.getElementById("campovacio").value = dominio;
+        document.getElementById("campoVacio").value = dominio;
         console.log(dominio);
 }
+
+
+let copiarDominio = function(){
+    document.getElementById('click', function(){
+        let copyText = document.getElementById('campoVacio')
+        copyText.select();
+        navigator.clipboard.writeText(copyText.value).then(function(){
+            Swal.fire({
+                icon: 'success',
+                title: 'Texto copiado',
+                text: copyText.value
+            });
+        }).catch(function(err){
+            console.error('error al copiar el texto: ' + err)
+        });
+    });
+}
+document.getElementById('copyButton').addEventListener('click', copiarDominio);

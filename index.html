@@ -20,8 +20,8 @@
   <body>
     <form class="d-flex flex-column justify-content-center m-auto mt-5 col-xxl-2">
       <div class="d-flex flex-row justify-content-center m-auto">
-        <input class="form-control col-xxl-12 m-auto" type="text" disabled id="campovacio"/>
-        <button class="btn ms-2 btn-secondary" type="button"><i class="fas fa-copy"></i></button>
+        <input class="form-control col-xxl-12 m-auto" type="text"  id="campoVacio"/>
+        <button class="btn ms-2 btn-secondary" type="button" id="copyButton" onclick="copiarDominio()"><i class="fas fa-copy"></i></button>
       </div>
       <button class="btn btn-md btn-primary mt-3 col-xxl-6 m-auto" type="button" onclick="generarDominio()">Generar Dominio</button>
     </form>
@@ -37,5 +37,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
   </body>
 </html>
