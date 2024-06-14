@@ -28,7 +28,6 @@ let generarDominio = function(){
 
 
 let copiarDominio = function(){
-    document.getElementById('click', function(){
         let copyText = document.getElementById('campoVacio')
         copyText.select();
         navigator.clipboard.writeText(copyText.value).then(function(){
@@ -40,6 +39,5 @@ let copiarDominio = function(){
         }).catch(function(err){
             console.error('error al copiar el texto: ' + err)
         });
-    });
 }
 document.getElementById('copyButton').addEventListener('click', copiarDominio);
